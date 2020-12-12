@@ -1,0 +1,63 @@
+.hamNav {
+    width: 100%;
+}
+.hamNav ul {
+    margin: 0 2px 0 2px;
+    list-style-type: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hamNav ul li {
+    font-size: 75%;
+}
+.hamNav label, #hamburgerMenuIcon {
+    display: none;
+}
+    body {
+        display: grid;
+        grid-template-columns:1fr;    /* Entire width of grid box is 1 fraction. auto fits to the content*/
+        grid-template-areas:
+        "header" /* 2 columns, so 2 title values */
+        "main" /* punctuation (.) leaves a white space where some area is supposed to be */
+        "footer";
+    }
+    .hamNav label {
+        display: inline-block;
+        color: white;
+        background: gray;
+        border-radius: 50%;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .hamNav ul {
+        display: none;
+    }
+    #hamItems li a {
+        text-decoration: none;
+        font-size: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+    }
+    .hamNav input:checked ~ #hamItems {
+        background: darkgrey;
+        display: block;
+    }
+    #hamItems li a:hover{
+        font-size: 125%;
+        transition: text-shadow 0.3s;
+        text-shadow: 1px 1px 2px black;
+    }
+    ul {
+        list-style-type: none;
+        font-size: 125%;
+    }
+    ul a {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+    
