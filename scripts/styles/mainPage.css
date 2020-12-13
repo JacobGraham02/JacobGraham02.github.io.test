@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-size: 100vh 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+html {
+    overflow-x: hidden;
+    text-align: center;
+} 
+/* Top, Right, Bottom, Left */
+#main {
+    grid-area: main;
+}
+#rate {
+    height: 48%;
+}
+.outerFigureWrapper {
+    width: 40%;
+    height: 70%;
+    margin: 0 auto;
+}
+.figure #wrapperImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* height: 80%; auto */
+}
+#wrapperImg:hover {
+    transform: scale(1.1, 1.1);
+}
+@media only screen and (max-width:768px) {
+    .figure {
+        margin-top: 25%;
+    }
+}
