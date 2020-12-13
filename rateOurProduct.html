@@ -38,33 +38,35 @@
                                 <legend></legend>
                                     <div id="firstNameDiv">
                                         <label for="fname">First name</label>
-                                        <input type="text" name="fname" id="fname" size="25" required placeholder="Type your first name here"/>
+                                        <input type="text" name="fname" id="fname" class="input" size="25" required placeholder="Type your first name here"/>
                                     </div>
                                                 
                                     <div id="lastNameDiv">
                                         <label for="lname">Last name</label>
-                                        <input type="text" name="lname" id="lname" size="25" required placeholder="Type your last name here"/>
+                                        <input type="text" name="lname" id="lname" class ="input" size="25" required placeholder="Type your last name here"/>
                                     </div>
                                                 
                                     <div id="emailDiv">
                                         <label for="email">email</label>
-                                        <input type="text" name="email" id="email" size="30" required placeholder="xxx@xxx.xxx"/>
+                                        <input type="text" name="email" id="email" class="input" size="30" required placeholder="xxx@xxx.xxx"/>
                                     </div>
                                                 
+                                    <!-- Used a regex string to ensure proper input -->
                                     <div id="phoneDiv">
                                         <label for="phone">phone</label>
-                                        <input type="text" name="phone" id="phone" size="15" required maxlength="15" placeholder="(xxx)-xxx-xxxx"/>
+                                        <input type="text" name="phone" id="phone" class="input" size="15" required maxlength="15" placeholder="(xxx)-xxx-xxxx" pattern="^\(\d{3}\)\s\d{3}-\d{4}" title="A number in the format: 
+                                        (###) ###-####" />
                                     </div>
 
                                     <div id="textAreaDiv">
                                         <label for="siteReview">Leave a detailed description (optional)</label>
-                                        <textarea id="siteReview" name="reviewOurSite" rows="8" cols="75"> </textarea> 
+                                        <textarea id="siteReview" name="reviewOurSite" class="input" rows="8" cols="75"> </textarea> 
                                     </div>
                             </fieldset>
 
                             <div id="buttonBox">
-                                <button type="submit" id="submitBtn">Order your epic pizzas</button>
-                                <button type="reset" id="resetBtn">Reset your personal info</button>
+                                <button type="submit" id="submitBtn" class="Btn">Submit site review</button>
+                                <button type="reset" id="resetBtn" class="Btn">Reset info</button>
                             </div>
 
                         </form>

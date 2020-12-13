@@ -43,7 +43,6 @@
         width: 100%;
     }
     .hamNav input:checked ~ #hamItems {
-        background: darkgrey;
         display: block;
     }
     #hamItems li a:hover{

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -80,7 +82,6 @@ body {
     color: white;
 }
 .fa {
-    border: 1px solid aqua;
     padding: 10px;
     font-size: 90%;
     border-radius: 50%;
@@ -94,7 +95,7 @@ body {
     transform: scale(1.1, 1.1);
 }
 #googleMapsLocation {
-    margin-top: 5%;
+    margin-top: 2%;
     width: 75%;
 }
 .supprtInfo {
@@ -102,4 +103,16 @@ body {
 }
 #copyright {
     font-variant: small-caps;
+}
+.corporateInfo {
+    margin-bottom: 2%;
+    word-spacing: 0.2em;
+    line-height: 2em;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 90%;
+    font-family: 'Oxygen', sans-serif;
+}
+#corporateMainHeader {
+    font-size: 24px;
 }
