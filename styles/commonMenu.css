@@ -1,3 +1,6 @@
+/*
+This is the CSS file that contains all the code that powers the CSS hamburger menu at the top of the screen. 
+*/
 .hamNav {
     width: 100%;
 }
@@ -42,6 +45,7 @@
         display: block;
         width: 100%;
     }
+    /* Select all list items that preceded by an input, when the input is checked  */
     .hamNav input:checked ~ #hamItems {
         display: block;
     }

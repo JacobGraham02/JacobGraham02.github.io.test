@@ -2,11 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
+/*
+This CSS file holds mainly the main layout used on every page to preserve reliable responsiveness on each page. It uses a combination of CSS grid and flexbox to layout elements. 
+
+Once again, most units on this page are % or vw, vh because of preserving responsiveness for all devices
+*/
 * {
     margin: 0;
     padding: 0;
 } html {
-    /* background-image: radial-gradient(at bottom left, lightgray 25%, darkgray 50%, darkgrey 75%, gray 100%); */
     background-image: url("../images/background.jpg");
     text-align: center;
 }
@@ -18,7 +22,6 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-auto-rows: minmax(min-content, max-content) 1fr 1fr; 1fr 1fr */
     grid-auto-rows: minmax(min-content, max-content) 2fr 1fr;
     grid-template-areas:
     "header header header header"
@@ -37,6 +40,7 @@ body {
     grid-area: header;
 }
 #main {
+    /* This is an experimental text linear-gradient thing that may not work because it is still considered "experimental", and is currently still in testing phases */
     background-image: linear-gradient(grey, darkgrey, grey);
     background-clip: text;
     color: #1B1B1B;
@@ -47,9 +51,9 @@ body {
     grid-area: main;
 }
 #footer {
+    /* h-offset, v-offset, blur radius, spread, colour */
     box-shadow: 0 4px 6px -2px gray;
     box-shadow: 1px -1px 4px 2px black;
-	/* box-shadow: 1px 1px 4px 1px black; */
     /* TRBL */
     text-align: center;
     background: gray;
@@ -90,6 +94,7 @@ body {
     margin: 10px;
 }
 .fa:hover {
+    /* CSS transition used to make the social media logos stand out more when you hover over them */
     transition: transform 0.3s;
     transition-timing-function: ease;
     transform: scale(1.1, 1.1);

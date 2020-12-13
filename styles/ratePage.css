@@ -1,3 +1,8 @@
+/*
+A CSS file used for the 'rating' page, to try and separate some of the styling logic to make maintenance or future additions easier. Doesn't really accomplish that, but it was worth a try. A media query is used to shrink the massive 'text area' element to make the page mobile friendly
+*/
+
+/* Imported google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 div input, label {
@@ -19,7 +24,11 @@ div {
     padding: 10px;
 }
 .Btn:hover {
-    transform: scale(1.1, 1.1);
+    transition-property: transform, border-radius, background-color;
+    transition-duration: 0.3s;
+    transform: scale(1.2, 1.2);
+    border-radius: 10%;
+    background-color: whitesmoke;
 }
 @media only screen and (max-width: 768px) {
     #siteReview {

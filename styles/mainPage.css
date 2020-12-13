@@ -1,3 +1,6 @@
+/*
+CSS file used specifically for the main page. Since the main page is (arguably) the most important part of a website, it deserves its own styling. Uses a media query to place the figure image somewhere conveniently placed on mobile devices. 
+*/
 * {
     margin: 0;
     padding: 0;

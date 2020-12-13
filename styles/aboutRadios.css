@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+/*
+I used almost completely % to size elements in order to preserve device responsiveness
 
+I used a bunch of css styling elements as used in Assignment 3 in order to make the text "stand out" in a way. :last-child psuedoselector selects, obviously, the last child of a parent element.
+
+display: relative displays an element that can move, and displayed "relative" to its original position
+*/
 #figureImg {
     /* TRBL */
     margin: 0 auto;
@@ -12,7 +18,7 @@
     width: 100%;
     height: auto;
 } 
-.radioDesc {
+p {
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     margin-top: 2em;
@@ -21,6 +27,24 @@
     word-spacing: 0.2em;
     padding-left: 2%;
     padding-right: 2%;
+}
+article:last-child  {
+    margin-bottom: 2%;
+}
+#asideBtn {
+    padding: 1%;
+}
+#asideRadioDesc {
+    display: none;
+    color: black;
+    font-size: 1.2em;
+}
+#asideBtn:hover {
+    transition-property: transform, border-radius, background-color;
+    transition-duration: 0.3s;
+    transform: scale(1.2, 1.2);
+    border-radius: 10%;
+    background-color: whitesmoke;
 }
 #footerSpan {
     display: relative;
