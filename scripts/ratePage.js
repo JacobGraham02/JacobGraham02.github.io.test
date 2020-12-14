@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
 // Document node
 var txtArea = document.getElementById("siteReview");
 
+var form = document.getElementById("rateForm");
+rateForm.addEventListener("submit", cool, false);
+
+function cool() {
+    alert("Thank you for subscribing!");
+}
 // Variable in function
 var timesClicked = 0;
 txtArea.addEventListener('click', function() {
